@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab05 - Infographic & Video</title>
+    <style>
+      :root {
+        --bg: #f4f7fb;
+        --card: #ffffff;
+        --primary: #1d4ed8;
+        --primary-dark: #163ea8;
+        --accent: #f59e0b;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --border: #dbe3f0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #eef4ff 0%, #f9fafb 100%);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 24px;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 28px;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: #dbeafe;
+        color: var(--primary-dark);
+        font-weight: 700;
+        font-size: 0.8rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 18px 0 10px;
+        font-size: clamp(2rem, 4vw, 3rem);
+        color: var(--primary-dark);
+      }
+
+      .subtitle {
+        margin: 0 auto;
+        max-width: 700px;
+        font-size: 1.05rem;
+        color: var(--muted);
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 24px;
+        margin-top: 30px;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+        padding: 20px;
+      }
+
+      .card h2 {
+        margin-top: 0;
+        margin-bottom: 16px;
+        color: var(--primary-dark);
+        font-size: 1.6rem;
+      }
+
+      .infographic img {
+        width: 100%;
+        display: block;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+      }
+
+      .video-wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%;
+        border-radius: 14px;
+        background: #000;
+      }
+
+      .video-wrapper iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .description {
+        margin-top: 28px;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 22px 24px;
+      }
+
+      .description h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: var(--primary-dark);
+      }
+
+      .description p {
+        margin: 0;
+        color: var(--text);
+        font-size: 1rem;
+      }
+
+      .footer-note {
+        margin-top: 24px;
+        padding-top: 16px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.95rem;
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        .content {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="eyebrow">Lab05 - Exercise 2.1 &amp; 2.2</div>
+        <h1>Infographic và Video Hướng Dẫn</h1>
+        <p class="subtitle">
+          Tổng quan ngắn về nội dung bài tập, hình ảnh trực quan và video minh họa để hỗ trợ hiểu rõ hơn về nhiệm vụ 2.2.
+        </p>
+      </header>
+
+      <main class="content">
+        <section class="card infographic">
+          <h2>Infographic</h2>
+          <img src="Lab05_Ex2.1.png" alt="Infographic của bài tập Lab05.Ex2.1" />
+        </section>
+
+        <section class="card video-section">
+          <h2>Video YouTube</h2>
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/4HCUmeco2kI"
+              title="Video bài tập Nhiệm vụ 2.2"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+      </main>
+
+      <section class="description">
+        <h3>Mô tả ngắn</h3>
+        <p>
+          Trang này trình bày một infographic trực quan cùng với video YouTube để giải thích rõ hơn nội dung và cách thực hiện bài tập Nhiệm vụ 2.2. Mục tiêu là kết hợp hình ảnh và nội dung nghe nhìn để người học dễ nắm bắt thông tin một cách nhanh chóng.
+        </p>
+      </section>
+
+      <footer class="footer-note">
+        Ghi chú bản quyền: Nội dung văn bản tham khảo từ Google Gemini, hình ảnh từ Unsplash (CC0).<br />
+        Infographic tạo bởi Canva AI, hình ảnh từ Unsplash (CC0).
+      </footer>
+    </div>
+  </body>
+</html>
